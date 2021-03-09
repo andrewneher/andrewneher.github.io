@@ -1,37 +1,92 @@
-<!DOCTYPE html>
-<html lang="en-us">
-
+<!doctype html>
+<html>
 <head>
-   <meta charset="UTF-8">
-   <title>
-    Andrew Neher Biography Page </title>
-<style>
-	h1 {color:black;
-		background-color:antiquewhite;
-		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
-	}</h1>
-</style>
-<link href="css.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Latitude Project</title>
+<!-- <link href="css/multiColumnTemplate.css" rel="stylesheet" type="text/css"> -->
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">	
 </head>
 <body>
-    <h1>Andrew Neher Biography Page</h1>
-    <br>
-    <br>
- <br>
-Born next to the Mississippi River in St. Cloud, MN in 1979. He lived an uneventful life, working as a designer and making music in his spare time. Or maybe, just maybe, in an alternate timeline somewhere nearly adjacent in the lines of code running in the background of the universe, He actual perished as a new born child in Fort Wayne. Stranger things have happened.<br>
-	<br>
-<img src="images/obituary.jpg" alt="Image of a newspaper clipping of the obituary of Andrew Neher."><br>
-<br>
-He lives with two cat sisters named Dot and Dash <img src="images/dash.jpg" alt="Image of the cat, Dash" width="198" height="200" title="Dash"><img src="images/dot.jpg" alt="Image of the cat, Dot." width="197" height="200" title="Dot"><br>
-	<links>
-<a href="mailto:andrewneher@gmail.com" title="Email" target="_blank">Email</a><br>
-<a href="http://www.phite.net" title="Neher Portfolio " target="_blank">Portfolio Site</a><br>
-<a href="http://www.louderhouse.com" title="Louder House" target="_blank">Louder House</a><br>
-<a href="https://www.linkedin.com/in/neher/" title="Neher LinkedIn" target="_blank">LinkedIn</a><br>
-<a href="https://www.instagram.com/andrewneher/?hl=en" title="Neher Instagram" target="_blank">Instagram 1</a> <a href="https://www.instagram.com/louderhouse/?hl=en" title="Louder House Instagram" target="_blank">2</a><br>
-	</links>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Latitude</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="nav navbar-nav navbar-right navbar-right-custom">
+        <li class="nav-item">
+          <a class="nav-link" href="comparisons.html">Comparisons</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Data</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Plots
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="temperature.html">Max Temperature</a></li>
+              <li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
+              <li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a></li>
+        <li><a class="dropdown-item" href="windspeed.html">Wind Speed</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <section class="row">
+    <div class="col-md-8">
 
+    <article class="left_article">
+      <h3>Summary: Latitude vs. X</h3>
+      <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities&nbsp;</p>
+      <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed and humidity. This sit provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+      
+    
+    <aside class="right_article"><img src="Resources/assets/images/Fig1.png" alt="City Lat vs Max Temperature Graph" class="placeholder"/> </aside>
+  </article>
+</div>
 
+  
+    <div class="col-md-4">
+      <h3>Visualizations</h3>
+      <div class="row">
+      <div class="col-md-6">
+      
+      <a href="Resources/assets/images/Fig1.png" target="_blank"><img src="Resources/assets/images/Fig1.png" alt="vs. Max Tempurature" class="thumbnail" width="200"></a></p>
+    </div>
+
+    <div class="col-md-6">
+      
+      <a href="Resources/assets/images/Fig2.png" target="_blank"><img src="Resources/assets/images/Fig2.png" alt="vs. Humidity" class="thumbnail" width="200"></a></p>
+      
+    </div>
+    
+    <div class="row">
+      <div class="col-md-6">
+      <a href="Resources/assets/images/Fig3.png" target="_blank"><img src="Resources/assets/images/Fig3.png" alt="vs. Cloudiness" width="200" class="thumbnail"></a></p>
+      
+</div>
+    
+<div class="col-md-6">
+      <a href="Resources/assets/images/Fig4.png" target="_blank"><img src="Resources/assets/images/Fig4.png" alt="vs. Wind Speed" class="thumbnail" width="200"></a></p>
+    </div>
+
+    </div>
+  </div>
+  </section>
+</div>
+  <footer class="secondary_header footer">
+    <div class="copyright">This was made for class and is nothing more than that&nbsp;</div>
+  </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
-
 </html>
